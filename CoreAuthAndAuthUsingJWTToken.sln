@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreAuthAndAuthUsingJWTToken", "CoreAuthAndAuthUsingJWTToken\CoreAuthAndAuthUsingJWTToken.csproj", "{92D3C4B8-0EBD-4276-B72E-538378DFA1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLIbrary", "SharedLIbrary\SharedLIbrary.csproj", "{B31623C2-349E-4719-BB2A-EEF6D2C5B95B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D3C4B8-0EBD-4276-B72E-538378DFA1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D3C4B8-0EBD-4276-B72E-538378DFA1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D3C4B8-0EBD-4276-B72E-538378DFA1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D3C4B8-0EBD-4276-B72E-538378DFA1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31623C2-349E-4719-BB2A-EEF6D2C5B95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31623C2-349E-4719-BB2A-EEF6D2C5B95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31623C2-349E-4719-BB2A-EEF6D2C5B95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31623C2-349E-4719-BB2A-EEF6D2C5B95B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
