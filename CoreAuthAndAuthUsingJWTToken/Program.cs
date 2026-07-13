@@ -92,7 +92,7 @@ using CoreAuthAndAuthUsingJWTToken.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ১. Controllers & JSON Options (Reference Cycle Handling)
+
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
@@ -101,18 +101,16 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-// ২. Database Context Setup
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("con")
     ?? throw new InvalidOperationException("Connection string 'con' not found.")));
 
-// ৩. Identity Middleware Setup
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddSignInManager()
     .AddRoles<IdentityRole>();
 
-// ৪. Authentication & JWT Validation Configuration
+
 builder.Services.AddAuthentication(options => {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
